@@ -392,7 +392,7 @@ class FaceManager {
 
     static async loadAndCreate(onComplete) {
         const loader = new THREE.TextureLoader();
-        const urls = ['subin1.jpg', 'subin2.jpg, 'subin3.jpg'];
+        const urls = ['subin1.jpg.jpg', 'subin2.jpg.jpg, 'subin3.jpg.jpg'];
         const textures = await Promise.all(urls.map(url => new Promise((resolve, reject) => {
             loader.load(url, resolve, undefined, reject);
         })));
